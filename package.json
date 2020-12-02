@@ -3,12 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "npm run serve",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "heroku-postbuild": "npm run build",
-    "heroku-postinstall": "npm install && npm run build"
+    "start": "node server.js"
   },
   "dependencies": {
     "ant-design-vue": "^1.7.2",
@@ -16,7 +14,9 @@
     "core-js": "^3.6.5",
     "dotenv": "^8.2.0",
     "element-ui": "^2.14.1",
+    "express": "^4.17.1",
     "moment": "^2.29.1",
+    "serve-static": "^1.14.1",
     "vue": "^2.6.11",
     "vue-js-modal": "^2.0.0-rc.6",
     "vue-toasted": "^1.1.28"
